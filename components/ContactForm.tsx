@@ -200,7 +200,7 @@ export default function ContactForm() {
                       <div className="relative">
                         <MessageSquare className="absolute left-3 top-4 size-5 text-slate-400" />
                         <FormControl>
-                          <Textarea placeholder="Détaillez votre demande (surface, type de support...)*" className="min-h-[250px] pl-10 pt-4 rounded-none bg-slate-50/50" {...field} />
+                          <Textarea placeholder="Détaillez votre demande (type de panne ou d'intervention...)*" className="min-h-[250px] pl-10 pt-4 rounded-none bg-slate-50/50" {...field} />
                         </FormControl>
                       </div>
                       <FormMessage />
