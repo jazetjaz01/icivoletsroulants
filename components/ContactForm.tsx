@@ -105,7 +105,7 @@ export default function ContactForm() {
 
             <div className="flex items-center gap-4">
               <div className="p-3 bg-slate-100 text-teal-700"><MailCheck className="size-5" /></div>
-              <a href="mailto:contact@prohabitation.com" className="text-slate-700 text-sm font-medium hover:text-teal-700">
+              <a href="mailto:contact@icivoletsroulants.com" className="text-slate-700 text-sm font-medium hover:text-teal-700">
                 contact@icivoletsroulants.com
               </a>
             </div>
@@ -182,10 +182,10 @@ export default function ContactForm() {
                       <Select onValueChange={field.onChange} value={field.value}>
                         <FormControl><SelectTrigger className="h-12 rounded-none"><SelectValue placeholder="Choisir une option" /></SelectTrigger></FormControl>
                         <SelectContent>
-                          <SelectItem value="placo">Pose placo</SelectItem>
-                          <SelectItem value="joint">Pose joint</SelectItem>
-                          <SelectItem value="peinture">Peinture</SelectItem>
-                          <SelectItem value="isolation">Isolation</SelectItem>
+                          <SelectItem value="placo">Réparation volets roulants</SelectItem>
+                          <SelectItem value="joint">Répaations stores</SelectItem>
+                          <SelectItem value="peinture">Réparation porte de garage</SelectItem>
+                          <SelectItem value="isolation">Réparation moteur portail</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />

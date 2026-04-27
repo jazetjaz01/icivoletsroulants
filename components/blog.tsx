@@ -55,7 +55,7 @@ const Blog = () => {
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 border-l-4 border-primary pl-6">
         <div className="space-y-2">
           <h2 className="font-bold text-4xl text-slate-900 tracking-wide uppercase leading-none">
-            nos articles <br />Prohabitation
+            nos articles <br />Icivoletsroulants
           </h2>
           <p className="text-slate-500 text-lg uppercase tracking-widest text-sm">
             France — Actualité

@@ -101,7 +101,7 @@ export default function ArticleDetailClient({ slug }: { slug: string }) {
             <ArrowLeft size={14} /> Retour
           </Button>
           <span className="hidden md:block text-[10px] uppercase tracking-[0.3em] text-slate-400 font-bold">
-            Prohabitation — Expertise Bâtiment Perpignan
+            Icivoletsroulants — Réseau national de réparation de volets roulants
           </span>
         </div>
       </div>
@@ -143,7 +143,7 @@ export default function ArticleDetailClient({ slug }: { slug: string }) {
           {post.image_url ? (
             <img
               src={post.image_url}
-              alt={`Réalisation Prohabitation : ${post.title}`}
+              alt={`Réparation volets roulants : ${post.title}`}
               className="object-cover w-full h-full"
               loading="eager"
             />
@@ -172,9 +172,9 @@ export default function ArticleDetailClient({ slug }: { slug: string }) {
 
         {/* CTA Interne pour le SEO */}
         <div className="mt-16 p-8 border-2 border-teal-700 bg-white">
-          <h3 className="text-xl font-bold uppercase mb-4 tracking-tighter">Un projet similaire à Perpignan ?</h3>
+          <h3 className="text-xl font-bold uppercase mb-4 tracking-tighter">Une demande de réparation ?</h3>
           <p className="text-slate-600 mb-6 text-sm">
-            Comme pour ce chantier, Prohabitation vous accompagne dans vos travaux de plâtrerie, peinture et isolation partout dans le 66.
+            Icivoletsroulants est à votre disposition pour la réparation de vos volets roulants en France.
           </p>
           <Button 
             onClick={() => router.push('/devis')}
@@ -189,7 +189,7 @@ export default function ArticleDetailClient({ slug }: { slug: string }) {
         <div className="flex flex-col items-center gap-4">
            <div className="w-12 h-1 bg-teal-700 mb-4"></div>
            <p className="text-[9px] text-slate-400 uppercase tracking-[0.5em] text-center">
-             Prohabitation — Artisan Plaquiste & Peintre — Pyrénées-Orientales
+             Icivoletsroulants — Réparation volets roulants — France
            </p>
         </div>
       </footer>

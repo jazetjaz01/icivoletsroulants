@@ -19,11 +19,11 @@ export async function generateMetadata({
     .single();
 
   if (!post) {
-    return { title: "Article introuvable | Prohabitation" };
+    return { title: "Article introuvable | Icivoletsroulants" };
   }
 
   return {
-    title: `${post.title} | Prohabitation`,
+    title: `${post.title} | Icivoletsroulants`,
     description: post.content?.substring(0, 160).replace(/[#*]/g, "") + "...",
   };
 }
