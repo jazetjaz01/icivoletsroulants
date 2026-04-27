@@ -32,7 +32,7 @@ const Footer = () => {
               <span className="font-monoton text-lg md:text-2xl tracking-widest text-white">
       icivoletsroulants
     </span>
-              <span className="hidden md:block text-sm md:text-sm font-medium -mt-1 tracking-[0.2em] text-white ml-1 ">
+              <span className="hidden md:block text-sm md:text-sm font-medium -mt-1 tracking-[0.14em] text-white ml-1 ">
                 réseau national de réparation de volets 
               </span>
             </div>
