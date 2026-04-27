@@ -44,20 +44,20 @@ export default function Hero1() {
             </h1>
 
             <p className="mt-6 text-slate-700 text-lg md:text-xl leading-relaxed opacity-90">
-              Icivoletsroulants esrt spécialisé dans la  <strong>réparation de volets roulants </strong> en France.
+              Icivoletsroulants esrt spécialisé dans la  <strong>réparation de volets roulants, stores, portes de garage et moteurs de portail </strong> en France.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
               {/* --- AJOUT DU LIEN VERS CONTACT --- */}
               <Button  className="rounded-full text-base px-8 h-12 bg-slate-900 hover:bg-teal-700 transition-all shadow-lg" size="lg">
-                <Link href="/contact" className="flex items-center">
-                  Contact <ArrowUpRight className="ml-2 size-5" />
+                <Link href="/rendez-vous" className="flex items-center">
+                  Demande de rendez-vous <ArrowUpRight className="ml-2 size-5" />
                 </Link>
               </Button>
 
               <Button  className="rounded-full text-base px-8 h-12 shadow-none border-slate-300 hover:bg-white" size="lg" variant="outline">
-                <a href="https://www.youtube.com/@TonLienYoutube" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                  <CirclePlay className="mr-2 size-5 text-slate-600" /> YouTube
+                <a href="/contact" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  <CirclePlay className="mr-2 size-5 text-slate-600" /> Contact
                 </a>
               </Button>
             </div>
