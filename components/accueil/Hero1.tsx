@@ -34,17 +34,17 @@ export default function Hero1() {
           <div className="max-w-xl lg:ml-12">
             <Badge className="rounded-full border-border py-1 px-4 mb-6 hover:bg-slate-100 transition-colors cursor-pointer" variant="secondary">
     <Link href="/actualite" className="flex items-center text-sm font-medium">
-      Actualité Prohabitation <ArrowUpRight className="ml-1 size-4" />
+      Actualité Icivoletsroulants <ArrowUpRight className="ml-1 size-4" />
     </Link>
   </Badge>
 
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-slate-900 leading-[1.1] tracking-tight">
-              Pose placo, peinture <br /> 
-              <span className="text-slate-600">et isolation</span>
+              Réparation volets <br /> 
+              <span className="text-slate-600">roulants</span>
             </h1>
 
             <p className="mt-6 text-slate-700 text-lg md:text-xl leading-relaxed opacity-90">
-              Prohabitation intervient à <strong>Perpignan</strong> et dans l'ensemble des Pyrénées Orientales pour tous vos projets de rénovation ou de construction.
+              Icivoletsroulants esrt spécialisé dans la  <strong>réparation de volets roulants </strong> en France.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
