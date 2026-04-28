@@ -14,7 +14,6 @@ import {
 export const NavMenuTop = ({ className, ...props }: ComponentProps<typeof NavigationMenu>) => (
   <NavigationMenu 
     {...props} 
-    // Utilisation de bg-white et alignement cohérent avec le menu principal
     className={cn("w-full max-w-full justify-end bg-white", className)}
   >
     <NavigationMenuList className="flex justify-end space-x-1 border-none shadow-none bg-white">
@@ -32,9 +31,9 @@ export const NavMenuTop = ({ className, ...props }: ComponentProps<typeof Naviga
               href={item.href} 
               className={cn(
                 navigationMenuTriggerStyle(), 
-                // Alignement exact du style :
-                // text-slate-700 et hover:bg-slate-50 pour la subtilité
-                "bg-white text-slate-700 hover:bg-slate-50 hover:text-teal-600 focus:bg-slate-50 focus:text-teal-600 text-sm h-10 px-4 transition-colors border-none shadow-none"
+                // AJOUT : !text-slate-700 pour forcer la couleur sombre
+                // AJOUT : !bg-white pour s'assurer que le fond reste blanc
+                "!bg-white !text-black hover:!bg-slate-50 hover:!text-teal-600 focus:!bg-slate-50 focus:!text-teal-600 text-sm h-10 px-4 transition-colors border-none shadow-none"
               )}
             >
               {item.name}
