@@ -14,15 +14,15 @@ import {
 export const NavMenuTop = ({ className, ...props }: ComponentProps<typeof NavigationMenu>) => (
   <NavigationMenu 
     {...props} 
-    className={cn("w-full max-w-full justify-end bg-transparent", className)}
+    // Utilisation de bg-white et alignement cohérent avec le menu principal
+    className={cn("w-full max-w-full justify-end bg-white", className)}
   >
-    {/* Ajout de border-none et suppression des pseudo-éléments éventuels */}
-    <NavigationMenuList className="flex justify-end space-x-1 border-none shadow-none">
+    <NavigationMenuList className="flex justify-end space-x-1 border-none shadow-none bg-white">
       
       {[
-        { name: "Qui sommes-nous", href: "/placo" },
-        { name: "Devenir franchisé", href: "/peinture" },
-        { name: "Recrutement", href: "/isolation" },
+        { name: "Qui sommes-nous", href: "/quisommesnous" },
+        { name: "Devenir franchisé", href: "/franchise" },
+        { name: "Recrutement", href: "/recrutement" },
         { name: "Actualité", href: "/actualite" },
         { name: "Contact", href: "/contact" },
       ].map((item) => (
@@ -32,8 +32,9 @@ export const NavMenuTop = ({ className, ...props }: ComponentProps<typeof Naviga
               href={item.href} 
               className={cn(
                 navigationMenuTriggerStyle(), 
-                // On force "border-none" et "shadow-none" pour éliminer les traits
-                "bg-transparent text-white hover:bg-teal-600 hover:text-white focus:bg-teal-600 focus:text-white text-sm h-10 px-4 transition-colors border-none shadow-none"
+                // Alignement exact du style :
+                // text-slate-700 et hover:bg-slate-50 pour la subtilité
+                "bg-white text-slate-700 hover:bg-slate-50 hover:text-teal-600 focus:bg-slate-50 focus:text-teal-600 text-sm h-10 px-4 transition-colors border-none shadow-none"
               )}
             >
               {item.name}
