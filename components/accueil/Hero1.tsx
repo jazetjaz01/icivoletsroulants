@@ -44,12 +44,12 @@ export default function Hero1() {
             </h1>
 
             <p className="mt-6 text-slate-700 text-lg md:text-xl leading-relaxed opacity-90">
-              Icivoletsroulants esrt spécialisé dans la  <strong>réparation de volets roulants, stores, portes de garage et moteurs de portail </strong> en France.
+              <strong>Icivoletsroulants</strong> est spécialisé dans la  <strong>réparation de volets roulants, stores, portes de garage et moteurs de portail </strong> dans toute la France.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
               {/* --- AJOUT DU LIEN VERS CONTACT --- */}
-              <Button  className="rounded-full text-base px-8 h-12 bg-slate-900 hover:bg-teal-700 transition-all shadow-lg" size="lg">
+              <Button  className="rounded-full text-base px-8 h-12 bg-teal-700 hover:bg-slate-900 transition-all shadow-lg" size="lg">
                 <Link href="/rendez-vous" className="flex items-center">
                   Demande de rendez-vous <ArrowUpRight className="ml-2 size-5" />
                 </Link>

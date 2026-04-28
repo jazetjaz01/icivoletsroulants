@@ -27,10 +27,12 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-3">
+           {/*
           <Button className="hidden sm:inline-flex" variant="outline">
             Sign In
           </Button>
           <Button>Get Started</Button>
+          */}
 
           {/* Menu Mobile (Trigger) */}
           <div className="md:hidden">

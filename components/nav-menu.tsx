@@ -49,7 +49,7 @@ export const NavMenu = ({ className, ...props }: ComponentProps<typeof Navigatio
             href="/isolation" 
             className={cn(navigationMenuTriggerStyle(), "w-full !justify-center md:w-max")}
           >
-            Porte de garage
+            Porte garage
           </Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
@@ -61,7 +61,7 @@ export const NavMenu = ({ className, ...props }: ComponentProps<typeof Navigatio
             href="/actualite" 
             className={cn(navigationMenuTriggerStyle(), "w-full !justify-center md:w-max")}
           >
-            Portail coulissant
+            Portail 
           </Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
@@ -70,10 +70,10 @@ export const NavMenu = ({ className, ...props }: ComponentProps<typeof Navigatio
       <NavigationMenuItem className="w-full">
         <NavigationMenuLink asChild>
           <Link 
-            href="/contact" 
+            href="/rendez-vous" 
             className={cn(navigationMenuTriggerStyle(), "w-full !justify-center md:w-max")}
           >
-            Contact
+            Prise rendez-vous
           </Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
