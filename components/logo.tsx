@@ -24,7 +24,7 @@ export const Logo = () => (
         icivoletsroulants
       </span>
       
-      <span className="hidden md:block text-sm font-medium -mt-1 tracking-[0.07em] text-gray-700">
+      <span className="hidden md:block text-sm font-medium -mt-1 tracking-[0.07em] text-black">
         réseau national répatateurs de volets roulants
       </span>
     </div>
