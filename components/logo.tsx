@@ -20,12 +20,12 @@ export const Logo = () => (
 
     {/* Conteneur du texte (flex-col pour garder l'empilement) */}
     <div className="flex flex-col">
-      <span className="text-2xl font-bold md:text-4xl tracking-widest text-black">
+      <span className="text-2xl font-bold md:text-3xl tracking-widest text-black">
         icivoletsroulants
       </span>
       
-      <span className="hidden md:block text-sm font-medium -mt-1 tracking-[0.07em] text-black">
-        réseau national répatateurs de volets roulants
+      <span className="hidden md:block text-sm font-medium -mt-1 tracking-[0.09em] text-black">
+        réseau répatateurs de volets roulants
       </span>
     </div>
   </div>
