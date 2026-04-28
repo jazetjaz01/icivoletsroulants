@@ -38,9 +38,9 @@ export default function Hero1() {
     </Link>
   </Badge>
 
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-black leading-[1.1] tracking-tight">
-              ici  
-              <span className="text-black">voletsroulants</span>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-teal-700 leading-[1.1] tracking-tight">
+             vous souhaitez réparer  
+              <span className="text-teal-700"> vos volets roulants ?</span>
             </h1>
 
             <p className="mt-6 text-slate-700 text-lg md:text-xl leading-relaxed opacity-90">
