@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import Hero1 from "@/components/actualite/Hero1";
 import Blog from "@/components/blog";
+import Hero2 from "@/components/accueil/Hero2";
 
 export const metadata: Metadata = {
   title: "Actualités & Conseils réparation volets roulants | Icivoletsroulants",
@@ -38,6 +39,7 @@ export default function ActualitesPage() {
         <main className="flex flex-col">
         
           <Hero1 />
+          <Hero2 />
           <Blog />
         </main>
       </div>

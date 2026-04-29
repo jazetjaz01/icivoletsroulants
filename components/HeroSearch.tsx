@@ -97,7 +97,7 @@ export const HeroSearch = () => {
       </form>
       
       <p className="mt-3 text-sm text-slate-600 font-medium">
-        📍 Plus de 400 techniciens disponibles
+        📍 Intervention en France, Belgique et Suisse.
       </p>
     </div>
   );
