@@ -15,7 +15,7 @@ export default function Hero1() {
         {/* --- Colonne IMAGE (Gauche) --- */}
         <div className="relative h-[300px] lg:h-full w-full z-0">
           <Image
-            src="/images/accueil/accueil1.jpg" 
+            src="/images/accueil/accueil10.jpg" 
             alt="Réparation de volets roulants - Ici Volets Roulants" 
             fill 
             priority 
