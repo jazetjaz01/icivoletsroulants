@@ -19,23 +19,24 @@ export interface ServicesProps {
 // Mise à jour des chemins vers le dossier public/images/accueil
 export const servicesData: ServiceItem[] = [
     {
-        heading: "Brand Strategy",
-        descp: "We craft unique brand stories and visual identities that resonate with your audience and build long-lasting trust and recognition.",
+        heading: "Réparation",
+        descp: "Qu’il s’agisse de volets roulants en PVC ou en aluminium, qu’ils soient manuels ou motorisés, nos techniciens sont qualifiés pour intervenir sur tous types de réparations.",
         image: "/images/accueil/services-1.png" // Le chemin part de la racine du dossier public
     },
     {
-        heading: "Web development",
-        descp: "Build stunning, user-friendly websites that not only look great but also perform seamlessly across all devices.",
+        heading: "Motorisation",
+        descp: "Améliorez votre confort au quotidien en motorisant votre volet roulant manuel. Dites adieu à la manivelle grâce à l’installation d’un moteur performant, pour une utilisation simple et sans effort.",
         image: "/images/accueil/services-2.png"
     },
     {
-        heading: "Content creation",
-        descp: "We create engaging, high-quality content that resonates with your audience and helps you connect with them on a deeper level.",
+        heading: "Installation",
+        descp: "Vous avez un projet de construction ou de rénovation de votre habitation ? L’un de vos volets roulants est hors service ? Vous souhaitez remplacer vos équipements actuels par une solution plus moderne, pratique et esthétique ",
+
         image: "/images/accueil/services-3.png"
     },
     {
-        heading: "Motion graphics",
-        descp: "We create engaging, high-quality motion graphics that capture the essence of your brand and help you connect with your audience on a deeper level.",
+        heading: "Maintenance",
+        descp: "Nous vous proposons des contrats de maintenance Volets Roulants adaptés aux résidences de vacances, syndics et copropriétés",
         image: "/images/accueil/services-4.png"
     }
 ];
@@ -56,17 +57,17 @@ function Hero4({ data = servicesData }: ServicesProps) {
                             <Badge variant="outline" className="py-1 px-3 h-auto text-sm font-normal border-0 outline outline-border">
                                 Services
                             </Badge>
-                            <h2 className="sm:text-5xl text-3xl text-foreground font-semibold">What we do</h2>
-                            <p className="max-w-2xl text-muted-foreground sm:text-lg text-base">
-                                A glimpse into our creativity—exploring innovative designs, successful collaborations, and transformative digital experiences.
+                            <h2 className="sm:text-5xl text-3xl text-foreground font-semibold">Nous réparons les volets roulants</h2>
+                            <p className="max-w-2xl text-black sm:text-lg text-base">
+                            Vos équipements rencontrent un dysfonctionnement et vous avez besoin d’un dépannage rapide et efficace ? 
                             </p>
                         </div>
                         <Button
                             asChild
                             className={"group p-1 bg-teal-700 hover:bg-black text-white font-medium flex gap-2 lg:gap-3 justify-between items-center rounded-full w-fit ps-5 h-auto border-0 animate-in fade-in slide-in-from-right-10 duration-1000 delay-200 ease-in-out fill-mode-both"}
                         >
-                            <a href="#" className="flex items-center gap-3 text-white text-sm font-medium">
-                                Let's Collaborate
+                            <a href="/devis" className="flex items-center gap-3 text-white text-sm font-medium">
+                                Demande devis
                                 <div className="p-2 bg-white rounded-full group-hover:rotate-45 transition-transform duration-300 ease-in-out">
                                     <Icon
                                         className="text-teal-700"
@@ -103,7 +104,7 @@ function Hero4({ data = servicesData }: ServicesProps) {
                                         className="group py-6 xl:py-10 border-t border-border cursor-pointer flex xl:flex-row flex-col xl:items-center items-start justify-between xl:gap-10 gap-1 relative">
                                         <h3 className={cn(
                                             "transition-colors duration-300 py-1 text-2xl md:text-3xl font-semibold max-w-2xs w-full", 
-                                            activeIndex === index ? "text-teal-500" : "text-foreground group-hover:text-teal-500"
+                                            activeIndex === index ? "text-teal-700" : "text-foreground group-hover:text-teal-500"
                                         )}>
                                             {value.heading}
                                         </h3>
