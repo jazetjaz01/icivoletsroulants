@@ -31,7 +31,7 @@ const activities = [
   {
     title: "Installation volets roulants neufs",
     subtitle: "Remplacemens anciens volets par des volets roulants neufs",
-    image: "/images/accueil/accueil11.jpg",
+    image: "/images/accueil/accueil15.jpg",
     href: "/services/fenetres",
   },
 ];

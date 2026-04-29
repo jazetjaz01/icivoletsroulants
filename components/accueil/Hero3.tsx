@@ -1,21 +1,21 @@
 "use client";
 
-import { Star, StarHalf } from "lucide-react";
+import { Star, StarHalf, Award } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Hero3() {
   return (
-    <section className="w-full py-8  bg-white">
+    <section className="w-full py-8 bg-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4">
           
           {/* Bloc Custplace */}
           <div className="flex items-center gap-4">
             <div className="relative w-16 h-16 shrink-0">
-               {/* Remplace par ton vrai logo si dispo */}
-               <div className="w-full h-full bg-slate-100 rounded-full flex items-center justify-center border-2 border-amber-400 font-bold text-[10px] text-center p-1 uppercase">
-                 Avis Pro
+               <div className="w-full h-full  flex items-center justify-center ">
+                 {/* Utilisation de l'icône Reward à la place de "Avis Pro" */}
+                 <Award size={64} className="text-black" strokeWidth={1} />
                </div>
             </div>
             <div>
