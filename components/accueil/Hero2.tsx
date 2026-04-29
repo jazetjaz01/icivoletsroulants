@@ -25,7 +25,7 @@ const activities = [
   {
     title: "Portails",
     subtitle: "Réparation, motorisation et maintenance",
-    image: "/images/accueil/accueil1.jpg",
+    image: "/images/accueil/accueil14.jpg",
     href: "/services/portails",
   },
   {
