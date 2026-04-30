@@ -17,7 +17,7 @@ const Navbar = () => {
       </div>
 
       {/* Barre principale */}
-      <div className="mx-auto flex h-20 w-full max-w-(--breakpoint-xl) items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-20 w-full max-w-(--breakpoint-2xl) items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="transition-opacity hover:opacity-80">
           <Logo />
         </Link>

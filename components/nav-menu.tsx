@@ -3,6 +3,7 @@
 import Link from "next/link";
 import type { ComponentProps } from "react";
 import { cn } from "@/lib/utils";
+import { MapPin } from "lucide-react"; // Import de l'icône
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -25,7 +26,7 @@ export const NavMenu = ({ className, ...props }: ComponentProps<typeof Navigatio
             href="/placo" 
             className={cn(navigationMenuTriggerStyle(), "w-full !justify-center md:w-max")}
           >
-           Volets roulants
+          Réparation volets roulants
           </Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
@@ -37,7 +38,7 @@ export const NavMenu = ({ className, ...props }: ComponentProps<typeof Navigatio
             href="/peinture" 
             className={cn(navigationMenuTriggerStyle(), "w-full !justify-center md:w-max")}
           >
-            Stores
+            Motorisation volets
           </Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
@@ -49,7 +50,7 @@ export const NavMenu = ({ className, ...props }: ComponentProps<typeof Navigatio
             href="/isolation" 
             className={cn(navigationMenuTriggerStyle(), "w-full !justify-center md:w-max")}
           >
-            Porte garage
+            Installation volets
           </Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
@@ -61,7 +62,7 @@ export const NavMenu = ({ className, ...props }: ComponentProps<typeof Navigatio
             href="/actualite" 
             className={cn(navigationMenuTriggerStyle(), "w-full !justify-center md:w-max")}
           >
-            Portail 
+            Réparation Portail 
           </Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
@@ -73,10 +74,27 @@ export const NavMenu = ({ className, ...props }: ComponentProps<typeof Navigatio
             href="/rendez-vous" 
             className={cn(navigationMenuTriggerStyle(), "w-full !justify-center md:w-max")}
           >
-            Prise rendez-vous
+            Store terrasse
           </Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
+
+      {/* Réseau avec icône alignée */}
+      <NavigationMenuItem className="w-full">
+        <NavigationMenuLink asChild>
+          <Link 
+            href="/reparateurs" 
+            className={cn(
+              navigationMenuTriggerStyle(), 
+              "w-full !justify-center md:w-max flex items-center" // Ajout de flex et items-center
+            )}
+          >
+            <MapPin className="mr-2 h-24 w-24" />
+            <span>Notre réseau</span>
+          </Link>
+        </NavigationMenuLink>
+      </NavigationMenuItem>
+
 
     </NavigationMenuList>
   </NavigationMenu>
