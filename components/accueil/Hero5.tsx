@@ -28,7 +28,7 @@ export default function Hero5() {
 
         {/* Gauche */}
         <motion.img
-          src="/images/accueil/accueil10.jpg"
+          src="/images/accueil/voletsterrasse2.jpg"
           style={{ x: leftX }}
           className="w-[300px] h-[420px] object-cover rounded-2xl shadow-xl"
           alt="Image Gauche"
@@ -36,7 +36,7 @@ export default function Hero5() {
 
         {/* Centre */}
         <motion.img
-          src="/images/accueil/accueil10.jpg"
+          src="/images/accueil/voletsterrasse.jpg"
           style={{ 
             scale: scaleCenter,
             zIndex: 10 
