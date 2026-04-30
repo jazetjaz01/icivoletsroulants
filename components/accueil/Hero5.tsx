@@ -22,7 +22,7 @@ export default function Hero5() {
   return (
     <section
       ref={ref}
-      className="h-[60vh] flex items-center justify-center bg-gray-100 overflow-hidden"
+      className="h-[60vh] flex items-center justify-center bg-teal-700 overflow-hidden"
     >
       <div className="flex items-center justify-center w-full max-w-[1400px] gap-4">
 
