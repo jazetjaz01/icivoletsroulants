@@ -6,28 +6,32 @@ import Link from "next/link";
 const activities = [
   {
     title: "Volets Roulants",
-    subtitle: "Réparation tablier, lames et moteurs",
+    subtitle: "Réparation tablier, lames,moteurs et motorisation",
     image: "/images/accueil/accueil11.jpg",
     href: "/services/volets-roulants",
   },
   {
-    title: "Store bane",
+    title: "Store terrasse",
     subtitle: "Réparation et maintenance stores manuels et motorisés",
     image: "/images/accueil/accueil12.jpg",
     href: "/services/stores",
   },
-  {
-    title: "Portes de Garage",
-    subtitle: "Réparation, motorisation et maintenance",
-    image: "/images/accueil/accueil13.jpg",
-    href: "/services/portes-de-garage",
-  },
+
+
   {
     title: "Portails",
     subtitle: "Réparation, motorisation et maintenance",
     image: "/images/accueil/accueil14.jpg",
     href: "/services/portails",
   },
+
+  {
+    title: "Portes de Garage",
+    subtitle: "Réparation, motorisation et maintenance",
+    image: "/images/accueil/accueil13.jpg",
+    href: "/services/portes-de-garage",
+  },
+  
   {
     title: "Installation volets roulants neufs",
     subtitle: "Remplacemens anciens volets par des volets roulants neufs",
@@ -68,7 +72,7 @@ export default function Hero2() {
 
               {/* Conteneur de texte */}
               <div className="absolute bottom-0 left-0 p-5 w-full text-white z-10">
-                <h3 className="text-lg font-bold uppercase tracking-wider">
+                <h3 className="text-lg font-bold  tracking-wider">
                   {activity.title}
                 </h3>
                 
