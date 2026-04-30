@@ -79,22 +79,21 @@ export const NavMenu = ({ className, ...props }: ComponentProps<typeof Navigatio
         </NavigationMenuLink>
       </NavigationMenuItem>
 
-      {/* Réseau avec icône alignée */}
+      {/* Réseau avec icône en couleur Teal 700 */}
       <NavigationMenuItem className="w-full">
         <NavigationMenuLink asChild>
           <Link 
             href="/reparateurs" 
             className={cn(
               navigationMenuTriggerStyle(), 
-              "w-full !justify-center md:w-max flex items-center" // Ajout de flex et items-center
+              "w-full md:w-max !flex !flex-row items-center justify-center"
             )}
           >
-            <MapPin className="mr-2 h-24 w-24" />
-            <span>Notre réseau</span>
+            <MapPin className="mr-2 h-5 w-5 shrink-0 text-teal-700" /> {/* Couleur ajoutée ici */}
+            <span className="whitespace-nowrap">Notre réseau</span>
           </Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
-
 
     </NavigationMenuList>
   </NavigationMenu>
