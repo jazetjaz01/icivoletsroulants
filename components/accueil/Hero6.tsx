@@ -74,7 +74,7 @@ export default function Hero6() {
           {/* Article Principal (Gauche) */}
           <Link 
             href={`/actualite/${featuredPost.slug}`}
-            className="group relative lg:col-span-6 h-[400px] md:h-[500px] overflow-hidden rounded-lg"
+            className="group relative lg:col-span-6 h-[400px] md:h-[400px] overflow-hidden rounded-lg"
           >
             <Image
               src={featuredPost.image_url}
