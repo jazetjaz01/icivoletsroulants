@@ -33,7 +33,7 @@ const Footer = () => {
 
             <div className="flex-shrink-0">
                   <Image 
-                    src="/images/logo-white-400.jpg" 
+                    src="/logo/logo-white-400.png" 
                     alt="Logo réparation volets roulants"
                     width={70}  
                     height={70} 

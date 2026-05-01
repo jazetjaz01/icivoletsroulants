@@ -7,7 +7,7 @@ export const Logo = () => (
     
     <div className="flex-shrink-0">
       <Image 
-        src="/images/logo400.jpg" 
+        src="/logo/logo-black-400.png" 
         alt="Logo réparation volets roulants"
         width={70}  
         height={70} 
