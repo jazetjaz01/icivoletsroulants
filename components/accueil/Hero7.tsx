@@ -13,7 +13,7 @@ export default function Hero7() {
           {/* Ajout de l'icône ici */}
           <div className="flex-shrink-0">
             <Image 
-              src="/images/accueil/logo-white-400.jpg" 
+              src="/images/accueil/logo-white-512.png" 
               alt="Logo réparation volets roulants"
               width={70}  
               height={70} 
