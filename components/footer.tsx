@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
 
 const footerLinks = [
 
@@ -29,12 +30,29 @@ const Footer = () => {
             
             {/* --- Logo : Passage en Blanc pour fond Teal --- */}
             <div className="flex flex-col items-center leading-none mb-8">
-              <span className="font-monoton text-lg md:text-2xl tracking-widest text-white">
-      icivoletsroulants
-    </span>
-              <span className="hidden md:block text-sm md:text-sm font-medium -mt-1 tracking-[0.14em] text-white ml-1 ">
-                réseau national de réparation de volets 
-              </span>
+
+            <div className="flex-shrink-0">
+                  <Image 
+                    src="/images/logo-white-400.jpg" 
+                    alt="Logo réparation volets roulants"
+                    width={70}  
+                    height={70} 
+                    /* h-6 sur mobile (24px) et md:h-12 sur desktop (48px) */
+                    className="h-6 w-auto md:h-12" 
+                    priority 
+                  />
+                </div>
+            
+
+
+
+              <span className="text-xl font-bold md:text-3xl tracking-widest text-white">
+        icivoletsroulants
+      </span>
+      
+      <span className="hidden md:block text-sm font-medium -mt-1 tracking-[0.09em] text-white ">
+        réseau réparateurs de volets roulants
+      </span>
             </div>
 
             {/* Navigation : Remplacement par du blanc et du teal très clair */}

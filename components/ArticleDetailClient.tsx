@@ -80,7 +80,7 @@ export default function ArticleDetailClient({ slug }: { slug: string }) {
     "image": post.image_url,
     "datePublished": post.created_at,
     "author": { "@type": "Person", "name": post.author_name },
-    "publisher": { "@type": "Organization", "name": "Prohabitation" }
+    "publisher": { "@type": "Organization", "name": "Icivoletsroulants" }
   };
 
   return (

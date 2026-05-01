@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero7() {
   return (
-    <section className="w-full bg-teal-700 text-white py-10 px-4 md:px-8">
+    <section className="w-full bg-teal-700 text-white py-20 px-4 md:px-8">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         
         {/* --- LOGO & SLOGAN --- */}
@@ -27,7 +27,7 @@ export default function Hero7() {
             <span className="text-xl font-bold md:text-3xl tracking-widest text-white ">
               icivoletsroulants
             </span>
-            <span className="text-[10px] md:text-xs font-medium leading-tight mt-1 opacity-90 max-w-[200px]">
+             <span className="hidden md:block text-sm font-medium -mt-1 tracking-[0.09em] text-white">
               réseau réparateurs de volets roulants
             </span>
           </div>
@@ -35,10 +35,10 @@ export default function Hero7() {
 
         {/* --- TEXTE D'AIDE --- */}
         <div className="flex-1 text-center md:text-left space-y-1">
-          <h3 className="text-lg md:text-xl font-bold">
+          <h3 className="text-lg md:text-xl font-bold tracking-widest">
             Une question ? Besoin d’aide ?
           </h3>
-          <p className="text-sm md:text-base font-medium opacity-95">
+          <p className="text-sm md:text-base font-medium opacity-95 tracking-widest">
             Notre service clients est à votre écoute.
           </p>
           <p className="text-[12px] md:text-sm opacity-80 italic">
