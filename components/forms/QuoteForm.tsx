@@ -2,10 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { 
-  PlusCircle, Bug, Umbrella, DoorOpen, 
-  FileBadge, Medal, Trophy 
-} from "lucide-react"; 
+// Conservation uniquement des icônes utilisées dans le panneau de gauche
+import { FileBadge, Medal, Trophy } from "lucide-react"; 
 import { cn } from "@/lib/utils";
 
 const SERVICES = [
@@ -19,10 +17,26 @@ const SERVICES = [
     title: "Motorisation de volets", 
     image: "/images/devis/devis3.jpg"
   },
-  { id: "installation", title: "Installation volets neufs",image: "/images/devis/devis4.png"  },
-  { id: "moustiquaires", title: "Installation moustiquaires",image: "/images/devis/devis5.png"  },
-  { id: "store", title: "Réparation store terrasse", image: "/images/devis/devis6.png"  },
-  { id: "portail", title: "Réparation moteur portail", image: "/images/devis/devis7.png"  },
+  { 
+    id: "installation", 
+    title: "Installation volets neufs", 
+    image: "/images/devis/devis4.png"  
+  },
+  { 
+    id: "moustiquaires", 
+    title: "Installation moustiquaires", 
+    image: "/images/devis/devis5.png"  
+  },
+  { 
+    id: "store", 
+    title: "Réparation store terrasse", 
+    image: "/images/devis/devis6.png"  
+  },
+  { 
+    id: "portail", 
+    title: "Réparation moteur portail", 
+    image: "/images/devis/devis7.png"  
+  },
 ];
 
 export default function QuoteForm() {
@@ -51,14 +65,15 @@ export default function QuoteForm() {
         <div className="absolute inset-0 bg-black/40 z-10" />
 
         <div className="relative z-20 flex flex-col items-center w-full">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-8 leading-tight ">
+          <h2 className="text-2xl lg:text-3xl font-bold mb-8 leading-tight text-center">
             Votre demande de devis 
           </h2>
           
           <div className="bg-white text-slate-900 p-6 lg:p-8 shadow-2xl max-w-sm w-full">
-            <p className="text-sm md:text-base leading-relaxed mb-6 ">
+            <p className="text-sm md:text-base leading-relaxed mb-6 text-center">
               <strong className="text-black">C&apos;est simple, gratuit et sans engagement !</strong><br />
-              Faites votre demande en ligne et obtenez une mise en relation avec nos techniciens locaux. En cas de besoin, nos Conseillers  sont à votre disposition pour répondre à toutes vos demandes.
+              Faites votre demande en ligne et obtenez une mise en relation avec nos techniciens locaux. 
+              En cas de besoin, nos Conseillers sont à votre disposition.
             </p>
 
             <div className="grid grid-cols-3 gap-2 py-6 border-y border-slate-100">
@@ -111,20 +126,14 @@ export default function QuoteForm() {
                       formData.service_type === service.id ? "border-teal-600 ring-2 ring-teal-600/20" : "border-transparent"
                     )}
                   >
-                    <div className={cn(
-                      "mb-4 flex items-center justify-center relative",
-                      service.image ? "h-24 w-24" : "h-12 w-12" // h-24 w-24 appliqué à toutes les images
-                    )}>
-                      {service.image ? (
-                        <Image 
-                          src={service.image} 
-                          alt={service.title} 
-                          fill 
-                          className="object-contain" 
-                        />
-                      ) : (
-                        service.icon && <service.icon className="size-12 text-slate-400 group-hover:text-teal-600 transition-colors" />
-                      )}
+                    {/* Conteneur d'image fixé à h-24 w-24 pour toutes les images */}
+                    <div className="mb-4 flex items-center justify-center relative h-24 w-24">
+                      <Image 
+                        src={service.image} 
+                        alt={service.title} 
+                        fill 
+                        className="object-contain" 
+                      />
                     </div>
 
                     <span className="text-sm text-center text-black tracking-tight font-semibold ">
