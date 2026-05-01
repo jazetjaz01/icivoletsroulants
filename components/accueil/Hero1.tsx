@@ -35,10 +35,9 @@ export default function Hero1() {
           <div className="max-w-xl lg:ml-12 w-full">
             
 
-            <h1 className="text-3xl md:text-3xl lg:text-5xl font-semibold text-black leading-[1.1] tracking-tight">
-             Vous souhaitez réparer vos volets roulants ?
-              
-            </h1>
+            <h1 className="text-xl md:text-3xl lg:text-5xl font-semibold text-black leading-[1.1] tracking-tight">
+  Vous souhaitez réparer vos volets roulants ?
+</h1>
 
             <p className="mt-6 text-slate-700 text-lg md:text-xl leading-relaxed opacity-90">
               <strong>Icivoletsroulants</strong> est spécialisé dans la <strong>réparation de volets roulants, stores, portes de garage et moteurs de portail</strong> dans toute la France.
