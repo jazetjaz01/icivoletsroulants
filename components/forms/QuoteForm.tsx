@@ -65,12 +65,12 @@ export default function QuoteForm() {
         <div className="absolute inset-0 bg-black/40 z-10" />
 
         <div className="relative z-20 flex flex-col items-center w-full">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-8 leading-tight text-center">
+          <h2 className="text-2xl lg:text-3xl font-bold mb-8 leading-tight ">
             Votre demande de devis 
           </h2>
           
           <div className="bg-white text-slate-900 p-6 lg:p-8 shadow-2xl max-w-sm w-full">
-            <p className="text-sm md:text-base leading-relaxed mb-6 text-center">
+            <p className="text-sm md:text-base leading-relaxed mb-6 ">
               <strong className="text-black">C&apos;est simple, gratuit et sans engagement !</strong><br />
               Faites votre demande en ligne et obtenez une mise en relation avec nos techniciens locaux. 
               En cas de besoin, nos Conseillers sont à votre disposition.
