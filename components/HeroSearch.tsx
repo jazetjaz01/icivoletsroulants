@@ -17,17 +17,13 @@ export const HeroSearch = () => {
     }
   
     try {
-      // Correction de l'URL : on ajoute explicitement le champ 'codesPostaux'
       const res = await fetch(`https://geo.api.gouv.fr/communes?nom=${value}&fields=nom,codesPostaux&limit=6`);
-      
       if (!res.ok) return;
 
       const data = await res.json();
 
       if (Array.isArray(data)) {
         const formatted = data.map((c: any) => {
-          // On récupère le premier code postal du tableau 'codesPostaux'
-          // S'il n'existe pas, on ne met rien ou on garde le code commune par défaut
           const zip = c.codesPostaux && c.codesPostaux.length > 0 
             ? c.codesPostaux[0] 
             : c.code; 
@@ -43,8 +39,12 @@ export const HeroSearch = () => {
 
   const handleSearch = (e?: React.FormEvent) => {
     e?.preventDefault();
+    // Si une ville est saisie, on l'ajoute en paramètre d'URL
     if (query) {
       router.push(`/devis?ville=${encodeURIComponent(query)}`);
+    } else {
+      // Si rien n'est saisi, on redirige vers le formulaire de devis vide
+      router.push(`/devis`);
     }
   };
 
@@ -77,6 +77,8 @@ export const HeroSearch = () => {
                     onClick={() => {
                       setQuery(city);
                       setSuggestions([]);
+                      // Optionnel : déclencher la recherche immédiatement après le clic sur une suggestion
+                      router.push(`/devis?ville=${encodeURIComponent(city)}`);
                     }}
                     className="px-5 py-4 hover:bg-slate-50 cursor-pointer text-slate-800 text-left border-b border-slate-50 last:border-none transition-colors bg-white"
                   >
